@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdream_notes=self.webpackChunkdream_notes||[]).push([[9891],{4466:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/draem-notes/blog/tags/docusaurus","allTagsPath":"/draem-notes/blog/tags","count":4}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdream_notes=self.webpackChunkdream_notes||[]).push([[2397],{6265:e=>{e.exports=JSON.parse('{"label":"facebook","permalink":"/draem-notes/blog/tags/facebook","allTagsPath":"/draem-notes/blog/tags","count":1}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdream_notes=self.webpackChunkdream_notes||[]).push([[1687],{322:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/draem-notes/blog/tags/hola","allTagsPath":"/draem-notes/blog/tags","count":1}')}}]);

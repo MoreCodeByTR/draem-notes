@@ -40,12 +40,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: ({ versionDocsDirPath, docPath }) =>
-            `https://github.com/MoreCodeByTR/draem-notes/${versionDocsDirPath}/${docPath}`,
+            `https://github.com/MoreCodeByTR/draem-notes/tree/master/${versionDocsDirPath}/${docPath}`,
         },
         blog: {
           blogSidebarTitle: '最近',
           showReadingTime: true,
-          editUrl: 'https://github.com/MoreCodeByTR/draem-notes',
+          editUrl: 'https://github.com/MoreCodeByTR/draem-notes/tree/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -74,7 +74,7 @@ const config = {
           },
           { to: '/blog', label: '博客', position: 'left' },
           {
-            href: 'https://github.com/MoreCodeByTR',
+            href: 'https://github.com/MoreCodeByTR/draem-notes',
             label: 'GitHub',
             position: 'right',
           },
@@ -82,7 +82,7 @@ const config = {
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} by morecode, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} by morecode`,
       },
       prism: {
         theme: lightCodeTheme,

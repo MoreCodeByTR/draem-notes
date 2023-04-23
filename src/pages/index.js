@@ -8,27 +8,27 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+    <div className={styles.contentContainer}>
+      <div className={styles.textContainer}>
+        <div className={styles.desc}>早知道昨天就加了</div>
+        <div className={styles.desc}>再涨2个点我就卖了</div>
+        <div className={styles.desc}>回本我就清仓</div>
+        <div className={styles.desc}>抄底抄底</div>
+        <div className={styles.desc}>... ...</div>
       </div>
-    </header>
+    </div>
   );
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title="财富自由"
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <HomepageHeader />
       </main>
     </Layout>
   );

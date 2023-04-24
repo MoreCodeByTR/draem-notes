@@ -66,13 +66,13 @@ const config = {
           src: 'https://avatars.githubusercontent.com/u/51108500?s=400&u=ea3654dc6572708eb25f75fa6555c375a4ab1af1&v=4',
         },
         items: [
+          { to: '/blog', label: '博客', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '指南',
           },
-          { to: '/blog', label: '博客', position: 'left' },
           {
             href: 'https://github.com/MoreCodeByTR/draem-notes',
             label: 'GitHub',

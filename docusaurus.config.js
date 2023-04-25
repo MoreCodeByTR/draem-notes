@@ -67,6 +67,7 @@ const config = {
         },
         items: [
           { to: '/blog', label: '博客', position: 'left' },
+          { to: '/docs/category/日常', label: '日常', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',

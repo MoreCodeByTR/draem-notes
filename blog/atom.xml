@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://morecodebytr.github.io/draem-notes/blog</id>
     <title>哈哈哈哈哈 Blog</title>
-    <updated>2023-04-24T16:15:16.000Z</updated>
+    <updated>2023-05-21T09:16:44.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://morecodebytr.github.io/draem-notes/blog"/>
     <subtitle>哈哈哈哈哈 Blog</subtitle>
     <icon>https://morecodebytr.github.io/draem-notes/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[前端性能监控]]></title>
+        <id>https://morecodebytr.github.io/draem-notes/blog/前端错误排查</id>
+        <link href="https://morecodebytr.github.io/draem-notes/blog/前端错误排查"/>
+        <updated>2023-05-21T09:16:44.000Z</updated>
+        <summary type="html"><![CDATA[分为以下两个方面进行监测]]></summary>
+        <content type="html"><![CDATA[<p>分为以下两个方面进行监测</p><ul><li>资源文件加载错误</li><li>js 文件执行错误</li></ul><p><code>net::ERR_ABORTED 404</code> 这种资源加载失败错误提示类型，在各个浏览器的实现中不一样，暂未找到 js 层面能够拿到此类信息的 API，根据具体错误提示来作判断，行不通 🙅‍♂️。</p><p><a href="https://juejin.cn/post/7178796635962408997" target="_blank" rel="noopener noreferrer">H5 白屏异常监控方案</a></p><p><a href="https://juejin.cn/post/6958701027801432095" target="_blank" rel="noopener noreferrer">前端监控</a></p><p><a href="https://juejin.cn/post/6921249056849133581" target="_blank" rel="noopener noreferrer">前端资源加载失败优化</a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[工具]]></title>
+        <id>https://morecodebytr.github.io/draem-notes/blog/工具</id>
+        <link href="https://morecodebytr.github.io/draem-notes/blog/工具"/>
+        <updated>2023-05-21T09:16:44.000Z</updated>
+        <summary type="html"><![CDATA[正则检查]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://regex101.com/" target="_blank" rel="noopener noreferrer">正则检查</a></p><p><a href="https://carbon.now.sh/" target="_blank" rel="noopener noreferrer">代码片段转图片</a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[React-Hooks]]></title>
+        <id>https://morecodebytr.github.io/draem-notes/blog/React-Hooks</id>
+        <link href="https://morecodebytr.github.io/draem-notes/blog/React-Hooks"/>
+        <updated>2023-05-19T17:05:07.000Z</updated>
+        <summary type="html"><![CDATA[如何理解 React hooks 不能再条件、循环语句中使用 ？]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="如何理解-react-hooks-不能再条件循环语句中使用-">如何理解 React hooks 不能再条件、循环语句中使用 ？<a href="#如何理解-react-hooks-不能再条件循环语句中使用-" class="hash-link" aria-label="如何理解 React hooks 不能再条件、循环语句中使用 ？的直接链接" title="如何理解 React hooks 不能再条件、循环语句中使用 ？的直接链接">​</a></h2><p>指的是 hooks 在组件内部声明时不能在条件语句中使用，因为 hooks 内部的实现，与 hooks 的顺序有关；
+并不限制在回调函数中使用 hooks 暴露的 api, 例如 setState；</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="hooks">Hooks<a href="#hooks" class="hash-link" aria-label="Hooks的直接链接" title="Hooks的直接链接">​</a></h2><p><code>useEffect</code></p><p>useEffect 的回调函数不能是异步函数，原因如下：</p><ul><li><p>1、useEffect 的返回值是要在卸载组件时调用的，React 需要在 mount 的时候马上拿到这个值，不然就乱套了</p></li><li><p>2、useEffect() 可能有个潜在逻辑：第二次触发 useEffect 里的回调前，前一次触发的行为都执行完成，返回的清理函数也执行完成。这样逻辑才清楚。而如果是异步的，情况会变得很复杂，可能会很容易写出有 bug 的代码。</p></li></ul><p>useEffect 所监听的依赖项，并不是依赖项的值发生变化，回调函数就会立即执行，而是需要等待组件 rerender 后再判断依赖项是否变化，进而判断是否需要执行；</p><p><code>useEffect 会执行</code>
+<img loading="lazy" alt="cat" src="/draem-notes/assets/images/effect_demo_01-afa2caca029f0108e6d18eec620c57e5.png" width="1356" height="1078" class="img_ev3q"></p><p><code>useEffect 不会执行</code>
+子组件更新了全局变量，通过 setState 只更新了子组件，父组件没有触发重新渲染，因此父组件的 useEffect 不会执行
+<img loading="lazy" alt="cat" src="/draem-notes/assets/images/effect_demo_02-e0cd565a65395e10cab82d35661fe9c3.png" width="1356" height="1190" class="img_ev3q"></p><p><code>useReducer、useContext</code></p><p><a href="https://juejin.cn/post/6995105000523317278" target="_blank" rel="noopener noreferrer">实现状态管理</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[TS 小记]]></title>
         <id>https://morecodebytr.github.io/draem-notes/blog/TS学习</id>
